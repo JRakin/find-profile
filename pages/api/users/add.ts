@@ -17,6 +17,5 @@ export default async (req: any, res: any) => {
         console.error(e);
     } finally {
         if (client) await client.close();
-        // Ensures that the client will close when you finish/error
     }
 };
